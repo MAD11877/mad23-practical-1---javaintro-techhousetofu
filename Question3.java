@@ -11,6 +11,13 @@ public class Question3
      */
      
     Scanner in = new Scanner(System.in);
+    System.out.print("Enter a whole number: ");
+    int integer = in.nextInt();
+
+    // Calculate & print
+    int result = integer*integer;
+    System.out.format("Your result is %d. %n", result);
+    in.close();
     
   }
 }
