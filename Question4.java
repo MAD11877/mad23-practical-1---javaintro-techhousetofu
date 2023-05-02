@@ -17,7 +17,20 @@ public class Question4
      * Hint: 2 loops are required. System.out.print(...) to print on single line.
      */
      
+    // User input
     Scanner in = new Scanner(System.in);
+    System.out.print("Enter a number: ");
+    int num = in.nextInt();
+
+    // Print triangle
+    for (int y = 0; y < num; y++){
+      int stars = num - y;
+      String s = "*";
+      System.out.println(s.repeat(stars));
+    }
+
+    // Close scanner
+    in.close();
     
   }
 }
